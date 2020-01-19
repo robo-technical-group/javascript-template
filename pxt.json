@@ -1,10 +1,10 @@
 {
     "name": "JS Template",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-arcade-info-screens": "github:robo-technical-group/pxt-arcade-info-screens#v1.0.8"
+        "pxt-arcade-info-screens": "github:robo-technical-group/pxt-arcade-info-screens#v1.0.13"
     },
     "files": [
         "main.ts",
