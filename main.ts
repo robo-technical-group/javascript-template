@@ -1,8 +1,8 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 2.2.0
- * Last update: 05 Jun 2019 ak
+ * MakeCode Arcade JavaScript Template v. 2.2.1
+ * Last update: 19 Jan 2020 ak
  */
 
 /**
