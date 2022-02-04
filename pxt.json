@@ -8,11 +8,20 @@
     },
     "files": [
         "main.ts",
-        "README.md"
+        "README.md",
+        "enums.ts",
+        "attract.ts",
+        "controller.ts",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
+    "targetVersions": {
+        "target": "1.7.24",
+        "targetId": "arcade"
+    },
     "supportedTargets": [
         "arcade"
     ],
