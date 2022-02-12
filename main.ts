@@ -1,7 +1,7 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 3.0.0
+ * MakeCode Arcade JavaScript Template v. 3.0.1
  * Template last update: 04 Feb 2022 ak
  */
 
@@ -19,16 +19,6 @@
 startAttractMode()
 
 /**
- * Start game modes
- */
-function startGame(): void {
-    __gameMode = GameMode.NotReady
-    __splashScreen.release()
-    scene.setBackgroundImage(assets.image`bg`)
-    __gameMode = GameMode.Main
-}   // startGame()
-
-/**
  * Game loops
  */
 game.onUpdate(function () {
@@ -43,6 +33,16 @@ game.onUpdate(function () {
             break
     }   // switch (__gameMode)
 })  // game.onUpdate()
+
+/**
+ * Start game modes
+ */
+function startGame(): void {
+    __gameMode = GameMode.NotReady
+    __splashScreen.release()
+    scene.setBackgroundImage(assets.image`bg`)
+    __gameMode = GameMode.Main
+}   // startGame()
 
 /**
  * Other functions
