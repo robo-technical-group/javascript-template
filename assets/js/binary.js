@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.26/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.0","target":"arcade","targetVersion":"1.12.26","repo":"robo-technical-group/javascript-template"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.26/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.1","target":"arcade","targetVersion":"1.12.26","repo":"robo-technical-group/javascript-template"}
 // total=1455931 new=7.67% cached=86.38% other=5.95%
 (function (ectx) {
 'use strict';
@@ -473,7 +473,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P281072(s) {
+function _main___P281171(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -987,7 +987,7 @@ switch (step) {
   case 49:
     r0 = s.retval;
     s.tmp_0 = game_onUpdate__P264250_mk(s);
-    s.tmp_0.arg0 = inline__P268535;
+    s.tmp_0.arg0 = inline__P281111;
     s.callLocIdx = 89; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
@@ -995,13 +995,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P281072.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P281072.continuations = [  ]
+_main___P281171.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P281171.continuations = [  ]
 
-function _main___P281072_mk(s) {
+function _main___P281171_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P281072, depth: s.depth + 1,
+        parent: s, fn: _main___P281171, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1558,7 +1558,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 69; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1602,7 +1602,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 71; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1646,7 +1646,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 73; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1690,7 +1690,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 75; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1734,7 +1734,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 77; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1778,7 +1778,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P265732_mk(s);
+    s.tmp_1 = startGame__P281108_mk(s);
     s.callLocIdx = 79; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1895,7 +1895,7 @@ function myImages_inline__P268527_mk(s) {
 
 
 
-function inline__P268535(s) {
+function inline__P281111(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1938,12 +1938,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P268535.info = {"start":278,"length":327,"line":23,"column":14,"endLine":34,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P281111.info = {"start":278,"length":327,"line":23,"column":14,"endLine":34,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P268535_mk(s) {
+function inline__P281111_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P268535, depth: s.depth + 1,
+        parent: s, fn: inline__P281111, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -14078,7 +14078,7 @@ function helpers__registerFactory__P264559_mk(s) {
 
 
 
-function startGame__P265732(s) {
+function startGame__P281108(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -14109,12 +14109,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-startGame__P265732.info = {"start":656,"length":172,"line":39,"column":0,"endLine":44,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
+startGame__P281108.info = {"start":656,"length":172,"line":39,"column":0,"endLine":44,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
 
-function startGame__P265732_mk(s) {
+function startGame__P281108_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: startGame__P265732, depth: s.depth + 1,
+        parent: s, fn: startGame__P281108, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -48414,5 +48414,5 @@ const sprites_BaseSpriteSayRenderer__C263487_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["__gameMode___265758","__splashScreen___265759","TEXT_TITLES___265757","TEXT_HEADLINES___265755","TEXT_ACTIONS___265756"])
 
-return _main___P281072
+return _main___P281171
 })
