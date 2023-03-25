@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-arcade-info-screens": "github:robo-technical-group/pxt-arcade-info-screens#v1.0.13"
+        "pxt-arcade-info-screens": "github:robo-technical-group/pxt-arcade-info-screens#v2.0.1"
     },
     "files": [
         "main.ts",
@@ -19,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.8.20",
+        "target": "1.12.26",
         "targetId": "arcade"
     },
     "supportedTargets": [
