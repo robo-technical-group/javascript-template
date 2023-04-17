@@ -1,7 +1,7 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 3.0.3
+ * MakeCode Arcade JavaScript Template v. 3.0.4
  * Template last update: 16 Apr 2023 ak
  */
 
@@ -12,11 +12,6 @@
 /**
  * Global variables
  */
-
-/**
- * Main() a.k.a. game.onStart()
- */
-startAttractMode()
 
 /**
  * Game loops
@@ -35,8 +30,9 @@ game.onUpdate(function () {
 })  // game.onUpdate()
 
 /**
- * Start game modes
+ * Other functions
  */
+
 function startGame(): void {
     g_gameMode = GameMode.NotReady
     g_splashScreen.release()
@@ -45,5 +41,7 @@ function startGame(): void {
 }   // startGame()
 
 /**
- * Other functions
+ * Main() a.k.a. game.onStart()
  */
+startAttractMode()
+
