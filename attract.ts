@@ -19,11 +19,11 @@ const TEXT_TITLES: string[] = ['My Game', 'in JavaScript']
 /**
  * Global variables
  */
-let __gameMode: GameMode = GameMode.NotReady
-let __splashScreen: SplashScreens = null
+let g_gameMode: GameMode = GameMode.NotReady
+let g_splashScreen: SplashScreens = null
 
 function buildSplashScreen(): void {
-    __splashScreen = new SplashScreens(
+    g_splashScreen = new SplashScreens(
         TEXT_TITLES, Color.Yellow,
         TEXT_HEADLINES, Color.Brown,
         TEXT_ACTIONS, Color.LightBlue)
@@ -31,6 +31,6 @@ function buildSplashScreen(): void {
 
 function startAttractMode(): void {
     buildSplashScreen()
-    __splashScreen.build()
-    __gameMode = GameMode.Attract
+    g_splashScreen.build()
+    g_gameMode = GameMode.Attract
 }   // startAttractMode()
