@@ -1,8 +1,8 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 3.0.4
- * Template last update: 16 Apr 2023 ak
+ * MakeCode Arcade JavaScript Template v. 3.0.5
+ * Template last update: 17 Apr 2023 ak
  */
 
 /**
@@ -12,6 +12,7 @@
 /**
  * Global variables
  */
+let g_gameMode: GameMode = GameMode.NotReady
 
 /**
  * Game loops
@@ -19,8 +20,8 @@
 game.onUpdate(function () {
     switch (g_gameMode) {
         case GameMode.Attract:
-            if (game.runtime() >= g_splashScreen.nextTime) {
-                g_splashScreen.rotate()
+            if (game.runtime() >= Attract.splashScreen.nextTime) {
+                Attract.splashScreen.rotate()
             }   // if (game.runtime() >= splash.nextTime)
             break
 
@@ -35,7 +36,7 @@ game.onUpdate(function () {
 
 function startGame(): void {
     g_gameMode = GameMode.NotReady
-    g_splashScreen.release()
+    Attract.splashScreen.release()
     scene.setBackgroundImage(assets.image`bg`)
     g_gameMode = GameMode.Main
 }   // startGame()
@@ -43,5 +44,4 @@ function startGame(): void {
 /**
  * Main() a.k.a. game.onStart()
  */
-startAttractMode()
-
+Attract.start()
