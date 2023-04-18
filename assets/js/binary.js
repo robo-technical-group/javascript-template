@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.29/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.5","target":"arcade","targetVersion":"1.12.29","repo":"robo-technical-group/javascript-template"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.29/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.1.0","target":"arcade","targetVersion":"1.12.29","repo":"robo-technical-group/javascript-template"}
 // total=1456353 new=7.66% cached=86.39% other=5.95%
 (function (ectx) {
 'use strict';
@@ -473,7 +473,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P533230(s) {
+function _main___P533402(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -981,9 +981,9 @@ switch (step) {
     s.callLocIdx = 84; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
-    globals.g_gameMode___517782 = (2);
+    globals.g_gameMode___533307 = (2);
     s.tmp_0 = game_onUpdate__P516300_mk(s);
-    s.tmp_0.arg0 = inline__P520587;
+    s.tmp_0.arg0 = inline__P533311;
     s.callLocIdx = 88; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
@@ -995,13 +995,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P533230.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P533230.continuations = [  ]
+_main___P533402.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P533402.continuations = [  ]
 
-function _main___P533230_mk(s) {
+function _main___P533402_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P533230, depth: s.depth + 1,
+        parent: s, fn: _main___P533402, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1550,7 +1550,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1558,7 +1558,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 69; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1594,7 +1594,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1602,7 +1602,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 71; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1638,7 +1638,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1646,7 +1646,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 73; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1682,7 +1682,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1690,7 +1690,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 75; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1726,7 +1726,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1734,7 +1734,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 77; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1770,7 +1770,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1778,7 +1778,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
-    s.tmp_1 = startGame__P517783_mk(s);
+    s.tmp_1 = startGame__P533309_mk(s);
     s.callLocIdx = 79; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1895,7 +1895,7 @@ function myImages_inline__P520580_mk(s) {
 
 
 
-function inline__P520587(s) {
+function inline__P533311(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1905,7 +1905,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.g_gameMode___517782;
+    s.tmp_0 = r0 = globals.g_gameMode___533307;
     r0 = pxsim_pxtcore.switch_eq(0, s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -1938,12 +1938,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P520587.info = {"start":263,"length":339,"line":19,"column":14,"endLine":30,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P533311.info = {"start":263,"length":339,"line":19,"column":14,"endLine":30,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P520587_mk(s) {
+function inline__P533311_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P520587, depth: s.depth + 1,
+        parent: s, fn: inline__P533311, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1978,7 +1978,7 @@ switch (step) {
     s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    globals.g_gameMode___517782 = (0);
+    globals.g_gameMode___533307 = (0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
@@ -14078,7 +14078,7 @@ function helpers__registerFactory__P516609_mk(s) {
 
 
 
-function startGame__P517783(s) {
+function startGame__P533309(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -14088,7 +14088,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    globals.g_gameMode___517782 = (2);
+    globals.g_gameMode___533307 = (2);
     s.tmp_0 = RotatingScreens_release__P517733_mk(s);
     s.tmp_0.arg0 = globals.splashScreen___517809;
     s.callLocIdx = 89; s.pc = 1; return s.tmp_0;
@@ -14104,17 +14104,17 @@ switch (step) {
     s.callLocIdx = 91; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    globals.g_gameMode___517782 = (1);
+    globals.g_gameMode___533307 = (1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-startGame__P517783.info = {"start":653,"length":178,"line":36,"column":0,"endLine":41,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
+startGame__P533309.info = {"start":653,"length":178,"line":36,"column":0,"endLine":41,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
 
-function startGame__P517783_mk(s) {
+function startGame__P533309_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: startGame__P517783, depth: s.depth + 1,
+        parent: s, fn: startGame__P533309, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -48412,7 +48412,7 @@ const sprites_BaseSpriteSayRenderer__C515537_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["g_gameMode___517782","splashScreen___517809","TEXT_TITLES___517808","TEXT_HEADLINES___517807","TEXT_ACTIONS___520493"])
+const breakpoints = setupDebugger(1, ["g_gameMode___533307","splashScreen___517809","TEXT_TITLES___517808","TEXT_HEADLINES___517807","TEXT_ACTIONS___520493"])
 
-return _main___P533230
+return _main___P533402
 })
