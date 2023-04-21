@@ -23,8 +23,9 @@ enum Color {
 
 // Game modes
 enum GameMode {
-    Attract,
-    Main,
     NotReady,
-    Settings
+    PauseMenu,
+    Attract,
+    Settings,
+    Main,
 }   // GameMode
