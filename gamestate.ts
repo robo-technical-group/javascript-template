@@ -238,12 +238,10 @@ namespace GameStateUI {
                 if (n == undefined) {
                     break
                 }
-                if (n.length > 0) {
-                    if (GameState.rename(selection, n)) {
-                        manageMenu.items[selectedIndex].text = n
-                    } else {
-                        game.splash(RENAME_EXISTS)
-                    }
+                if (GameState.rename(selection, n)) {
+                    manageMenu.items[selectedIndex].text = n
+                } else {
+                    game.splash(RENAME_EXISTS)
                 }
                 break
         }
