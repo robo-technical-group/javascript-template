@@ -54,7 +54,7 @@ function pressLeft(player: number = 1): void {
 }
 
 function pressMenu(): void {
-    if (PauseMenu.isMenuShowing) {
+    if (PauseMenu.menuVisible()) {
         PauseMenu.release()
     } else {
         PauseMenu.show()

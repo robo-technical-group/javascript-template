@@ -14,6 +14,7 @@ namespace Attract {
         'A = Action',
         'B = Action'
     ]]
+    const TEXT_LOAD_GAME: string = 'Press B to load game'
     export const TEXT_TITLES: string[] = ['My Game', 'in JavaScript']
 
     /**
@@ -22,10 +23,19 @@ namespace Attract {
     export let splashScreen: SplashScreens = null
 
     export function build(): void {
-        splashScreen = new SplashScreens(
-            TEXT_TITLES, Color.Yellow,
-            TEXT_HEADLINES, Color.Brown,
-            TEXT_ACTIONS, Color.LightBlue)
+        if (GameState.savesExist()) {
+            let newActions: string[][] = []
+            newActions.push(TEXT_ACTIONS[0].concat([TEXT_LOAD_GAME,]))
+            splashScreen = new SplashScreens(
+                TEXT_TITLES, Color.Yellow,
+                TEXT_HEADLINES, Color.Brown,
+                newActions, Color.LightBlue)
+        } else {
+            splashScreen = new SplashScreens(
+                TEXT_TITLES, Color.Yellow,
+                TEXT_HEADLINES, Color.Brown,
+                TEXT_ACTIONS, Color.LightBlue)
+        }
     }
 
     export function start(): void {
