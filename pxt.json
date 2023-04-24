@@ -16,7 +16,8 @@
         "images.g.jres",
         "images.g.ts",
         "pausemenu.ts",
-        "gamestate.ts"
+        "gamestate.ts",
+        "tests.ts"
     ],
     "testFiles": [],
     "targetVersions": {

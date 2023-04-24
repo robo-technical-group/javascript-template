@@ -1,8 +1,8 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 4.1.4
- * Template last update: 23 Apr 2023 ak
+ * MakeCode Arcade JavaScript Template v. 4.2.0
+ * Template last update: 24 Apr 2023 ak
  */
 
 /**
@@ -45,4 +45,8 @@ function startGame(): void {
  * Main() a.k.a. game.onStart()
  */
 game.stats = true
-Attract.start()
+if (settings.exists(Tests.TESTING_KEY)) {
+    Tests.run()
+} else {
+    Attract.start()
+}
