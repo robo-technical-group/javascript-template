@@ -17,8 +17,8 @@ function pressA(player: number = 1): void {
 function pressB(player: number = 1): void {
     switch (g_state.Mode) {
         case GameMode.Attract:
-            if (player == 1) {
-                startGame()
+            if (player == 1 && GameState.list().length > 0) {
+                GameStateUI.load()
             }
             break
 

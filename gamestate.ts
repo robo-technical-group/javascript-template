@@ -112,6 +112,15 @@ class GameState {
         return true
     }
 
+    /**
+     * Destroy resources that are not automatically released by the garbage collector.
+     * For example, if any sprites are created within the game state, then they need
+     * + to be destroyed.
+     */
+    public release(): void {
+        return
+    }
+
     public save(filename: string): void {
         if (filename.indexOf(GameState.KEY_PREFIX) == -1) {
             filename = GameState.KEY_PREFIX + filename
@@ -182,9 +191,12 @@ namespace GameStateUI {
         }
         fileMenu.close()
         Attract.splashScreen.release()
+        let oldState: GameState = g_state
         g_state = newGame
+        oldState.release()
         switch (newGame.Mode) {
             case GameMode.Main:
+            default:
                 // For now, just start a new game.
                 startGame()
                 break
