@@ -43,4 +43,10 @@ namespace Attract {
         splashScreen.build()
         g_state.Mode = GameMode.Attract
     }   // start()
+
+    export function update(): void {
+        if (game.runtime() >= Attract.splashScreen.nextTime) {
+            Attract.splashScreen.rotate()
+        }   // if (game.runtime() >= splash.nextTime)
+    }
 }

@@ -1,8 +1,8 @@
 /**
  * My JavaScript Game
  * Built on
- * MakeCode Arcade JavaScript Template v. 4.2.1
- * Template last update: 24 Apr 2023 ak
+ * MakeCode Arcade JavaScript Template v. 4.2.2
+ * Template last update: 11 Jun 2023 ak
  */
 
 /**
@@ -21,9 +21,7 @@ let g_state: GameState = new GameState()
 game.onUpdate(function () {
     switch (g_state.Mode) {
         case GameMode.Attract:
-            if (game.runtime() >= Attract.splashScreen.nextTime) {
-                Attract.splashScreen.rotate()
-            }   // if (game.runtime() >= splash.nextTime)
+            Attract.update()
             break
 
         case GameMode.Main:
